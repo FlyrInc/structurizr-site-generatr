@@ -194,6 +194,9 @@ workspace "Big Bank plc" "This is an example workspace to illustrate the key fea
 
         systemlandscape "SystemLandscape" {
             include *
+            !script views.rb {
+                tags "tag1,tag2,tag3"
+            }
             autoLayout
         }
 
@@ -205,6 +208,9 @@ workspace "Big Bank plc" "This is an example workspace to illustrate the key fea
 
         systemcontext internetBankingSystem "SystemContext" {
             include *
+            !script views.rb {
+                tags "tag1,tag2,tag3"
+            }
             animation {
                 internetBankingSystem
                 customer
@@ -218,6 +224,9 @@ workspace "Big Bank plc" "This is an example workspace to illustrate the key fea
 
         container internetBankingSystem "Containers" {
             include *
+            !script views.rb {
+                tags "tag1,tag2,tag3"
+            }
             animation {
                 customer mainframe email
                 webApplication
@@ -231,6 +240,9 @@ workspace "Big Bank plc" "This is an example workspace to illustrate the key fea
 
         component apiApplication "Components" {
             include *
+            !script views.rb {
+                tags "tag1,tag2,tag3"
+            }
             animation {
                 singlePageApplication mobileApp database email mainframe
                 signinController securityComponent
